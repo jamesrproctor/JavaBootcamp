@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author training
- *
- */
-module javaClassesTraining {
-}
