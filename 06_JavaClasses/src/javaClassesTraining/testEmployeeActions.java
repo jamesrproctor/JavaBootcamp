@@ -3,8 +3,20 @@ package javaClassesTraining;
 public class testEmployeeActions {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		setUp();
+		
+		tearDown();
 
+	}
+
+	private static void tearDown() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void setUp() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
