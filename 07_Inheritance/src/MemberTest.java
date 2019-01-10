@@ -54,6 +54,23 @@ class MemberTest {
 		Member member1 = new Member("Tester", 16);
 		String expectedString = "";
 		assertEquals(expectedString, member1.toString());
+		fail("Not yet implimented");
+
+	}
+	
+	@Test
+	void testToStringUpdateName() {
+		fail("Not yet implimented");
+	}
+	
+	@Test
+	void testToStringUpdateAge() {
+		fail("Not yet implimented");
+	}
+	
+	@Test
+	void testToStringUpdateBorrowed() {
+		fail("Not yet implimented");
 	}
 	
 	@Test
