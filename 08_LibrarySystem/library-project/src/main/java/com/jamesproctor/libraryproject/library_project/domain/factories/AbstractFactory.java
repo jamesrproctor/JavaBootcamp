@@ -1,4 +1,4 @@
-package com.jamesproctor.libraryproject.library_project.domain;
+package com.jamesproctor.libraryproject.library_project.domain.factories;
 
 public class AbstractFactory {
 	//
