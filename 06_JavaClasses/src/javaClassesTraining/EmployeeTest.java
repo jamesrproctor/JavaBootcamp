@@ -1,9 +1,10 @@
 package javaClassesTraining;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
+import static org.junit.jupiter.api.Assertions.fail;
+
+import java.util.Date;
+
 import org.junit.jupiter.api.Test;
 
 class EmployeeTest {
@@ -21,12 +22,12 @@ class EmployeeTest {
 
 	@Test
 	void testToStringInt() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testEmployee() {
-		fail("Not yet implemented");
+		Employee employee1 = new Employee("Bill", 22000);
+		int IDNumber = employee1.getID();
+		String stringReturn = employee1.toString(IDNumber);
+		String manuallyTyped = "Name: Bill. Salary: 22000. ID Number: " + IDNumber + ". Date joined: " + new Date();
+		
+		assertEquals(stringReturn, manuallyTyped);
 	}
 
 	@Test
@@ -56,22 +57,25 @@ class EmployeeTest {
 		
 		employee1.setSalary(28000);
 		double changedSalary = employee1.getSalary();
-		assertEquals(28000, salary, 0.1);	
+		assertEquals(28000, changedSalary, 0.1);	
 	}
 
 	@Test
 	void testSetSalary() {
-		fail("Not yet implemented");
+		Employee employee1 = new Employee("Haley", 24500);
+		double salary = employee1.getSalary();
+		assertEquals(salary, 24500, 0.001);
+		
+		employee1.setSalary(28700);
+		double changedSalary = employee1.getSalary();
+		assertEquals(28700, changedSalary, 0.1);	
 	}
 
 	@Test
 	void testGetJoined() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testSetJoined() {
-		fail("Not yet implemented");
+		Employee employee1 = new Employee("Tina", 26000);
+		Date joined = employee1.getJoined();
+		assertEquals(joined, new Date());
 	}
 
 	@Test

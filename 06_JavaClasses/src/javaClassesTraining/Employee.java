@@ -18,7 +18,7 @@ public class Employee {
 	}
 	
 	public String toString(int ID) {
-		String responseString = "Name: " + name + "Salary: " + salary + "ID Number: " + ID + "Date joined: " + joined;
+		String responseString = "Name: " + name + ". Salary: " + salary + ". ID Number: " + ID + ". Date joined: " + joined;
 		return responseString;
 	}
 	
