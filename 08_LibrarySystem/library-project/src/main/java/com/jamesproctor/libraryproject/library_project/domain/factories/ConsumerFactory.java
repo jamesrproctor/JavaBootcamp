@@ -1,8 +1,8 @@
 package com.jamesproctor.libraryproject.library_project.domain.factories;
 
-public class MemberFactory extends AbstractConsumerFactory {
+public class ConsumerFactory extends AbstractFactory {
 
-	public MemberFactory() {
+	public ConsumerFactory() {
 		// TODO Auto-generated constructor stub
 	}
 
