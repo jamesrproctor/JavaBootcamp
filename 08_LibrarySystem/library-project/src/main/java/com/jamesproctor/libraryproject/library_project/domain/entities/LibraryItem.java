@@ -7,9 +7,11 @@ public abstract class LibraryItem {
 	final String uuid = UUID.randomUUID().toString().replace("-", "");
 	
 	private String title;
+	private String genre;
 	
 	private Date dateAdded;
 	private Date dateBorrowed;
+	private Date yearPublished;
 	
 	private int totalCopies;
 	private int availableCopies;
@@ -19,6 +21,10 @@ public abstract class LibraryItem {
 	public String getTitle() {
 		return title;
 	}
+	
+	public String getGenre() {
+		return genre;
+	}
 
 	public Date getDateAdded() {
 		return dateAdded;
@@ -26,6 +32,10 @@ public abstract class LibraryItem {
 
 	public Date getDateBorrowed() {
 		return dateBorrowed;
+	}
+	
+	public Date getYearPublished() {
+		return yearPublished;
 	}
 
 	public int getTotalCopies() {
